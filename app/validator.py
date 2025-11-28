@@ -15,11 +15,11 @@ def dividir(dividendo, divisor):
     """
     # Validar que ambos números sean no negativos
     if dividendo < 0 or divisor < 0:
-        raise Exception("Los numeros deben ser positivos")
+        raise ValueError("Los numeros deben ser positivos")
     
     # Validar que no haya división por cero
     if divisor == 0:
-        raise Exception("No se puede dividir por cero")
+        raise ValueError("No se puede dividir por cero")
     
     # Realizar la división entera
     return dividendo // divisor
